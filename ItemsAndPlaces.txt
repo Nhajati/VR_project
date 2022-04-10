@@ -13,3 +13,9 @@ toytruck1
 toytruck2
 toywatercan
 camera
+
+
+interactions: 
+SHOULD ADD HAND/CONTROLLER VISUALS
+left controller joystick: move 
+right joystick: change orientation
