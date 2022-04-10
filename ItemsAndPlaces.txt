@@ -1,0 +1,15 @@
+food shelf
+dresser
+nightstand
+
+ball
+book1
+book2
+chipsbag1
+chipsbag2
+chipsbag3
+banana
+toytruck1
+toytruck2
+toywatercan
+camera
