@@ -41,10 +41,20 @@ public class BookShelfItems : MonoBehaviour
             book1.transform.position = new Vector3(0.44f, 1.31f, 1.0f);
             book1.transform.rotation = Quaternion.Euler(-90, 0, 0);
         }
+        else if(col.gameObject.name == "Book2"){
+            Destroy(book2.GetComponent<OVRGrabbable>());
+            Destroy(book2.GetComponent<Rigidbody>());
+            Destroy(col);
+            book2.transform.position = new Vector3(0.44f, 1.90f, -0.5f);
+            book2.transform.rotation = Quaternion.Euler(90, 0, 0);
+        }
+        else if(col.gameObject.name == "Book3"){
+            Destroy(book3.GetComponent<OVRGrabbable>());
+            Destroy(book3.GetComponent<Rigidbody>());
+            Destroy(col);
+            book3.transform.position = new Vector3(0.44f, 0.57f, 0.0f);
+            book3.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
     }
 
-    // void OnTriggerEnter(Collider collider)
-    //     {
-    //         OnTriggerEnterAction?.Invoke(this);
-    //     }
 }
