@@ -47,7 +47,7 @@ public class ToyDresserItems : MonoBehaviour
             Destroy(truck1.GetComponent<OVRGrabbable>());
             Destroy(truck1.GetComponent<Rigidbody>());
             Destroy(col);
-            truck1.transform.position = new Vector3(7.17f, 0.68f, -1.23f);
+            truck1.transform.position = new Vector3(7.17f, 0.7f, -1.23f);
             truck1.transform.rotation = Quaternion.Euler(0, 73, 0);
         }
         else if(col.gameObject.name == "ToyTruck2"){
@@ -55,7 +55,7 @@ public class ToyDresserItems : MonoBehaviour
             Destroy(truck2.GetComponent<OVRGrabbable>());
             Destroy(truck2.GetComponent<Rigidbody>());
             Destroy(col);
-            truck2.transform.position = new Vector3(7.19f, 0.66f, -1.05f);
+            truck2.transform.position = new Vector3(7.19f, 0.7f, -1.05f);
             truck2.transform.rotation = Quaternion.Euler(0, -90, 0);
         }
         else if(col.gameObject.name == "ToyWaterCan"){
