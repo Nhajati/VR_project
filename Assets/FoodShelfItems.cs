@@ -41,7 +41,7 @@ public class FoodShelfItems : MonoBehaviour
             Destroy(chips1.GetComponent<Rigidbody>());
             Destroy(col);
             chips1.transform.position = new Vector3(4.5f, 0.3f, 3.3f);
-            chips1.transform.rotation = Quaternion.Euler(-90, 0, 0);
+            chips1.transform.rotation = Quaternion.Euler(0, -90, 0);
         }
         else if(col.gameObject.name == "ChipsBag2"){
             Destroy(chips2.GetComponent<OVRGrabbable>());
@@ -61,13 +61,9 @@ public class FoodShelfItems : MonoBehaviour
             Destroy(banana.GetComponent<OVRGrabbable>());
             Destroy(banana.GetComponent<Rigidbody>());
             Destroy(col);
-            banana.transform.position = new Vector3(4.0f, 0.78f, 3.24f);
+            banana.transform.position = new Vector3(4.0f, 0.73f, 3.4f);
             banana.transform.rotation = Quaternion.Euler(0, -90, 0);
         }
     }
 
-    // void OnTriggerEnter(Collider collider)
-    //     {
-    //         OnTriggerEnterAction?.Invoke(this);
-    //     }
 }
