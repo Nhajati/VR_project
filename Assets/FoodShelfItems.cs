@@ -17,6 +17,8 @@ public class FoodShelfItems : MonoBehaviour
     [Tooltip("Points scored by touching this object.")]
     public float points = 10;
 
+    IGS520b.starter.SampleGame.GameManager gameManager;
+    public GameObject myGameManager;
     // public System.Action<GamePoint> OnTriggerEnterAction;
 
     // Start is called before the first frame update
@@ -32,11 +34,13 @@ public class FoodShelfItems : MonoBehaviour
         Collider rootCollider = GetComponent<Collider>();
         rootCollider.enabled = true;
         rootCollider.isTrigger = true;
+        gameManager = myGameManager.GetComponent<IGS520b.starter.SampleGame.GameManager>();
     }
 
     void OnTriggerEnter(Collider col)
     {
         if(col.gameObject.name == "ChipsBag1"){
+            gameManager.AddPointToCounter();
             Destroy(chips1.GetComponent<OVRGrabbable>());
             Destroy(chips1.GetComponent<Rigidbody>());
             Destroy(col);
@@ -44,6 +48,7 @@ public class FoodShelfItems : MonoBehaviour
             chips1.transform.rotation = Quaternion.Euler(0, -90, 0);
         }
         else if(col.gameObject.name == "ChipsBag2"){
+            gameManager.AddPointToCounter();
             Destroy(chips2.GetComponent<OVRGrabbable>());
             Destroy(chips2.GetComponent<Rigidbody>());
             Destroy(col);
@@ -51,6 +56,7 @@ public class FoodShelfItems : MonoBehaviour
             chips2.transform.rotation = Quaternion.Euler(-90, -90, 0);
         }
         else if(col.gameObject.name == "ChipsBag3"){
+            gameManager.AddPointToCounter();
             Destroy(chips3.GetComponent<OVRGrabbable>());
             Destroy(chips3.GetComponent<Rigidbody>());
             Destroy(col);
@@ -58,6 +64,7 @@ public class FoodShelfItems : MonoBehaviour
             chips3.transform.rotation = Quaternion.Euler(-20, 138, -7);
         }
         else if(col.gameObject.name == "Banana"){
+            gameManager.AddPointToCounter();
             Destroy(banana.GetComponent<OVRGrabbable>());
             Destroy(banana.GetComponent<Rigidbody>());
             Destroy(col);

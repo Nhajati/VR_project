@@ -350,7 +350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 274, y: -118}
+  m_AnchoredPosition: {x: 730, y: -493}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &94756703
@@ -373,7 +373,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0 / 12 Objects Placed
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -400,7 +400,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.05
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1001,6 +1001,7 @@ MonoBehaviour:
   book2: {fileID: 1820840148}
   book3: {fileID: 1808782037}
   points: 10
+  myGameManager: {fileID: 1179363128}
 --- !u!1001 &241244534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1648,6 +1649,7 @@ MonoBehaviour:
   chips3: {fileID: 1775692167}
   banana: {fileID: 321624631}
   points: 10
+  myGameManager: {fileID: 1179363128}
 --- !u!4 &439438831 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6080136733598372274, guid: 5a81cd115bd5dc147b16f9add3b6e010, type: 3}
@@ -3226,6 +3228,7 @@ MonoBehaviour:
   book2: {fileID: 1820840148}
   book3: {fileID: 1808782037}
   points: 10
+  myGameManager: {fileID: 1179363128}
 --- !u!4 &883423440 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7637858215818164813, guid: 87f2dceaf552fcd44baac28befb2a617, type: 3}
@@ -3417,6 +3420,7 @@ MonoBehaviour:
   book2: {fileID: 1820840148}
   book3: {fileID: 1808782037}
   points: 10
+  myGameManager: {fileID: 1179363128}
 --- !u!1001 &947312225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3509,6 +3513,7 @@ MonoBehaviour:
   book2: {fileID: 1820840148}
   book3: {fileID: 1808782037}
   points: 10
+  myGameManager: {fileID: 1179363128}
 --- !u!1001 &956211194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3516,6 +3521,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 795075381005896164, guid: 4ffbb7fee0a73ab4f9bb67e00a37d95b, type: 3}
+      propertyPath: pointsText
+      value: 
+      objectReference: {fileID: 94756703}
     - target: {fileID: 795075381005896165, guid: 4ffbb7fee0a73ab4f9bb67e00a37d95b, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -3814,11 +3823,12 @@ MonoBehaviour:
   truck1: {fileID: 535070085}
   truck2: {fileID: 388623359}
   ball: {fileID: 1564979852}
-  toyCamera: {fileID: 0}
+  toyCamera: {fileID: 1787316000}
   waterCan: {fileID: 188795481}
   truckCase: {fileID: 1730997884}
   waterCanCase: {fileID: 1736385832}
   CameraCase: {fileID: 1149064004}
+  myGameManager: {fileID: 1179363128}
   points: 10
 --- !u!1 &1099166954 stripped
 GameObject:
@@ -4000,6 +4010,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1451083915716759186, guid: e2dc4c5d62b562643b3fd8b58dc001df, type: 3}
   m_PrefabInstance: {fileID: 1749168128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1179363128 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 795075381005896165, guid: 4ffbb7fee0a73ab4f9bb67e00a37d95b, type: 3}
+  m_PrefabInstance: {fileID: 956211194}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1180738162
 PrefabInstance:

@@ -50,6 +50,7 @@ public class ToyDresserItems : MonoBehaviour
     void OnTriggerEnter(Collider col)
     {
         if(col.gameObject.name == "ToyTruck1"){
+            gameManager.AddPointToCounter();
             // truckCase.transform.position = new Vector3(0.0f, 0.0f, 3.7f);
             Destroy(truck1.GetComponent<OVRGrabbable>());
             Destroy(truck1.GetComponent<Rigidbody>());
@@ -59,6 +60,7 @@ public class ToyDresserItems : MonoBehaviour
             truck1.transform.rotation = Quaternion.Euler(0, 73, 0);
         }
         else if(col.gameObject.name == "ToyTruck2"){
+            gameManager.AddPointToCounter();
             // truckCase.transform.position = new Vector3(0.0f, 0.0f, 3.7f);
             Destroy(truck2.GetComponent<OVRGrabbable>());
             Destroy(truck2.GetComponent<Rigidbody>());
@@ -68,6 +70,7 @@ public class ToyDresserItems : MonoBehaviour
             truck2.transform.rotation = Quaternion.Euler(0, -90, 0);
         }
         else if(col.gameObject.name == "ToyWaterCan"){
+            gameManager.AddPointToCounter();
             // Destroy(waterCanCase.GetComponent<Collider>());
             // Destroy(waterCanCase.GetComponent<Rigidbody>());
             // waterCanCase.transform.position = new Vector3(0.0f, 0.0f, 3.7f);
@@ -91,6 +94,7 @@ public class ToyDresserItems : MonoBehaviour
             toyCamera.transform.rotation = Quaternion.Euler(0, -90, 0);
         }
         else if(col.gameObject.name == "Ball"){
+            gameManager.AddPointToCounter();
             Destroy(ball.GetComponent<OVRGrabbable>());
             Destroy(ball.GetComponent<Rigidbody>());
             Destroy(col);
