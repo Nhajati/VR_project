@@ -21,6 +21,9 @@ public class ToyDresserItems : MonoBehaviour
     [SerializeField]
     private GameObject CameraCase;
 
+    IGS520b.starter.SampleGame.GameManager gameManager;
+    public GameObject myGameManager;
+
     [Tooltip("Points scored by touching this object.")]
     public float points = 10;
 
@@ -28,6 +31,10 @@ public class ToyDresserItems : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // gameManager = new IGS520b.starter.SampleGame.GameManager;
+        // gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        gameManager = myGameManager.GetComponent<IGS520b.starter.SampleGame.GameManager>();
+        
         // Make sure non of the colliders in child objects are active
         foreach (Collider collider in GetComponentsInChildren<Collider>())
         {
@@ -74,6 +81,7 @@ public class ToyDresserItems : MonoBehaviour
             waterCan.transform.rotation = Quaternion.Euler(0, 63, 0);
         }
         else if(col.gameObject.name == "ToyCamera"){
+            gameManager.AddPointToCounter();
             // CameraCase.transform.position = new Vector3(0.0f, 0.0f, 3.7f);
             Destroy(toyCamera.GetComponent<OVRGrabbable>());
             Destroy(toyCamera.GetComponent<Rigidbody>());

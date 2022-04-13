@@ -26,11 +26,13 @@ namespace IGS520b.starter.SampleGame
 
         void Start(){
             pointCounter = 0;
+            pointsText.text = "0/12 Objects Placed";
         }
 
         void Update(){
-            if(pointCounter >= 12){
-                // Game ends
+            if(pointCounter <= 12){
+                pointsText.text = pointCounter.ToString() + "/12 Objects Placed";
+                // pointsText.text = "meow";
             }
         }
         
