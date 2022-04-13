@@ -43,35 +43,43 @@ public class ToyDresserItems : MonoBehaviour
     void OnTriggerEnter(Collider col)
     {
         if(col.gameObject.name == "ToyTruck1"){
-            truckCase.transform.position = new Vector3(0.0f, 0.0f, 3.7f);
+            // truckCase.transform.position = new Vector3(0.0f, 0.0f, 3.7f);
             Destroy(truck1.GetComponent<OVRGrabbable>());
             Destroy(truck1.GetComponent<Rigidbody>());
             Destroy(col);
-            truck1.transform.position = new Vector3(7.17f, 0.7f, -1.23f);
+            // truck1.transform.position = new Vector3(7.17f, 0.7f, -1.23f);
+            truck1.transform.position = new Vector3(7.6f, 0.7f, -1.23f);
             truck1.transform.rotation = Quaternion.Euler(0, 73, 0);
         }
         else if(col.gameObject.name == "ToyTruck2"){
-            truckCase.transform.position = new Vector3(0.0f, 0.0f, 3.7f);
+            // truckCase.transform.position = new Vector3(0.0f, 0.0f, 3.7f);
             Destroy(truck2.GetComponent<OVRGrabbable>());
             Destroy(truck2.GetComponent<Rigidbody>());
             Destroy(col);
-            truck2.transform.position = new Vector3(7.19f, 0.7f, -1.05f);
+            // truck2.transform.position = new Vector3(7.19f, 0.7f, -1.05f);
+            truck2.transform.position = new Vector3(7.6f, 0.7f, -1.05f);
             truck2.transform.rotation = Quaternion.Euler(0, -90, 0);
         }
         else if(col.gameObject.name == "ToyWaterCan"){
-            waterCanCase.transform.position = new Vector3(0.0f, 0.0f, 3.7f);
+            // Destroy(waterCanCase.GetComponent<Collider>());
+            // Destroy(waterCanCase.GetComponent<Rigidbody>());
+            // waterCanCase.transform.position = new Vector3(0.0f, 0.0f, 3.7f);
+            // Vector3 howmuchtomove = new Vector3(0.0f, 0.0f, 3.7f);
+            // waterCanCase.transform.position = waterCanCase.transform.position + howmuchtomove;
             Destroy(waterCan.GetComponent<OVRGrabbable>());
             Destroy(waterCan.GetComponent<Rigidbody>());
             Destroy(col);
-            waterCan.transform.position = new Vector3(7.14f, 0.31f, -1.9f);
+            // waterCan.transform.position = new Vector3(7.14f, 0.31f, -1.9f);
+            waterCan.transform.position = new Vector3(7.6f, 0.31f, -1.9f);
             waterCan.transform.rotation = Quaternion.Euler(0, 63, 0);
         }
         else if(col.gameObject.name == "camera"){
-            CameraCase.transform.position = new Vector3(0.0f, 0.0f, 3.7f);
+            // CameraCase.transform.position = new Vector3(0.0f, 0.0f, 3.7f);
             Destroy(camera.GetComponent<OVRGrabbable>());
             Destroy(camera.GetComponent<Rigidbody>());
             Destroy(col);
-            camera.transform.position = new Vector3(7.18f, 0.74f, -2.6f);
+            // camera.transform.position = new Vector3(7.18f, 0.74f, -2.6f);
+            camera.transform.position = new Vector3(7.6f, 0.74f, -2.6f);
             camera.transform.rotation = Quaternion.Euler(0, -90, 0);
         }
         else if(col.gameObject.name == "Ball"){
