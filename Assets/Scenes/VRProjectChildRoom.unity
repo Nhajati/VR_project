@@ -350,7 +350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1080, y: -540}
+  m_AnchoredPosition: {x: 274, y: -118}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &94756703
@@ -3814,7 +3814,7 @@ MonoBehaviour:
   truck1: {fileID: 535070085}
   truck2: {fileID: 388623359}
   ball: {fileID: 1564979852}
-  camera: {fileID: 1787316000}
+  toyCamera: {fileID: 0}
   waterCan: {fileID: 188795481}
   truckCase: {fileID: 1730997884}
   waterCanCase: {fileID: 1736385832}
@@ -5631,7 +5631,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 30119347845477643, guid: b69aac29372e92f4db307eb5fec8c95a, type: 3}
       propertyPath: m_Name
-      value: camera
+      value: ToyCamera
       objectReference: {fileID: 0}
     - target: {fileID: 30119347845477643, guid: b69aac29372e92f4db307eb5fec8c95a, type: 3}
       propertyPath: m_IsActive
